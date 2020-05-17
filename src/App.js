@@ -46,18 +46,18 @@ class App extends Component {
     })
     return (
       <div className="App">
-        <div className="header">
-          <span>Home</span>
+        <div className="header" class='App-header'>
+          <span class ="home">Home</span>
         </div>
 
-        <div className="body">
-          <span>{this.state.currentPerson+1}/25</span>
+        <div class="body">
+          <span class= 'pgNum'>{this.state.currentPerson+1}/25</span>
           {person}
         </div>
 
-        <div>
-          <button onClick={this.handlePrevious}>Previous</button>
-          <button onClick={this.handleNext}>Next</button>
+        <div class="button-bar">
+          <button class="nav" onClick={this.handlePrevious}>&lt;Previous</button>
+          <button class="nav"onClick={this.handleNext}>Next&gt;</button>
         </div>
       </div>
     );
